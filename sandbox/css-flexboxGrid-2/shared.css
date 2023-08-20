@@ -1,0 +1,51 @@
+:root {
+  /* colors generate from https://coolors.co/palettes/trending  */
+  /* and https://color.adobe.com/cs/create/color-wheel */
+  --clr-font:#403F38;
+  --clr-font-light:#FEFAE0;
+  --clr-bg: #5C0105;
+  --clr-bg2: #E3AD5D;
+  --clr-bg3:#D03119;
+  --clr-bg4:#A8AFE3;
+  --clr-bg5:#5C0105;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
+  word-spacing: 1.4px;
+  font-family: 'Roboto', sans-serif;
+  color: var(--clr-font);
+}
+
+
+.panel1 {
+  background-color: var(--clr-bg5);
+  color: var(--clr-font-light);
+}
+
+.panel2{
+  background-color: var(--clr-bg2);
+}
+
+.panel3 {
+  background-color: var(--clr-bg3);
+  color: white;
+}
+
+.panel4{
+  background-color: var(--clr-bg4);
+  color: white;
+}
+
+.panel5 {
+  background-color: #A61B0F;
+  color: white; 
+}

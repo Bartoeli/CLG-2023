@@ -1,0 +1,52 @@
+ .container {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: grid;
+  grid-template-columns:  1fr 3fr 1fr;
+  grid-template-rows:  50px 3fr 100px;
+  /* tady nadefinujte sablonu oblasti "grid-template-areas"  */
+  /* Budou to 3 radky textu. */
+  /* stranka by mela vypadat takto:  */
+  /* |----------------------------------------|*/
+  /* |                header                  |*/
+  /* |----------------------------------------|*/
+  /* |      |                         |       |*/
+  /* |      |                         | right |*/
+  /* | left |          main           | side  |*/
+  /* | side |                         |       |*/
+  /* |      |                         |       |*/
+  /* |      |                         |       |*/
+  /* |      |---------------------------------|*/
+  /* |      |           footer                |*/
+  /* |----------------------------------------|*/
+}
+
+.menuPanel {
+  /* tady zvolte spravne grid-area */
+  background-color: var(--clr-bg5);
+  color: var(--clr-font-light);
+}
+
+.leftPanel{
+  /* tady zvolte spravne grid-area */
+  background-color: var(--clr-bg2);
+}
+
+.rightPanel {
+  /* tady zvolte spravne grid-area */
+  background-color: var(--clr-bg3);
+}
+
+.footerPanel{
+  /* tady zvolte spravne grid-area */
+  background-color: var(--clr-bg5);
+  color: white;
+}
+
+.mainPanel {
+  /* tady zvolte spravne grid-area */
+  background-color: #A61B0F;
+  color: white;
+ 
+}

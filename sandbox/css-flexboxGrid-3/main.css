@@ -1,0 +1,30 @@
+ .container {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+/* 
+  Tady nastavte display na grid
+  Taky nastavte souplce (grid-template-columns) na pomer 1:3:1
+  A nastavte vysku radku (grid-template-rows) tak aby
+     1. mel vysku 50px
+     2. jeho vyska vyplni stranku (automaticky se prispusobi)
+     3. posledni radek mel vysku 100px */
+    
+  /*  Melo by to vypadat nejak takto:    */
+  /* |----------------------------------|*/
+  /* |      |                    |      |*/
+  /* |----------------------------------|*/
+  /* |      |                    |      |*/
+  /* |      |                    |      |*/
+  /* |      |                    |      |*/
+  /* |      |                    |      |*/
+  /* |      |                    |      |*/
+  /* |----------------------------------|*/
+  /* |      |                    |      |*/
+  /* |      |                    |      |*/
+  /* |----------------------------------|*/
+
+  /* sem napiste vas kod */
+ 
+}
+
