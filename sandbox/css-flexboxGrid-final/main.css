@@ -1,0 +1,79 @@
+.container {
+  display: grid;
+  grid-template-rows:  50px 1fr 100px;
+  grid-template-columns:  1fr 3fr 1fr;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  grid-template-areas:
+  "header header header"
+  "leftSide main rightSide"
+  "leftSide footer footer";
+}
+
+.menuPanel{
+  grid-area: header;
+  background-color: var(--clr-bg5);
+  display: flex;
+  flex-direction: row  ;
+  font-size: 1.7rem;
+  font-family: sans-serif;
+  justify-content: space-around;
+  color: var(--clr-font-light);
+}
+
+.leftPanel{
+  grid-area: leftSide;
+  padding: 10px;
+  background-color: var(--clr-bg2);
+}
+
+.rightPanel {
+  grid-area: rightSide;
+  background-color: var(--clr-bg3);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;  
+}
+
+.rightPanel img{
+  border: 10px solid var(--clr-bg);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.footerPanel{
+  grid-area: footer;
+  background-color: var(--clr-bg5);
+  color: white;
+  display: flex;
+  font-size: 2em;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+}
+ 
+.mainTextPanel{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.mainTextPanel p, .mainTextPanel h2{
+  color: white;
+  width: 35%;
+}
+
+.mainPanel {
+  grid-area: main;
+
+  padding: 10px;
+  background-color: #A61B0F; /* Used if the image is unavailable */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-image: url("imgs/dogbg.jpg"); /* The image used */
+ 
+}

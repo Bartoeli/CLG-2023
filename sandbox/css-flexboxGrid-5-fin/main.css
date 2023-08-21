@@ -1,0 +1,44 @@
+ .container {
+  display: grid;
+  grid-template-rows:  50px 1fr 100px;
+  grid-template-columns:  1fr 3fr 1fr;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  grid-template-areas:
+  "header header header"
+  "leftSide main rightSide"
+  "leftSide footer footer";
+}
+
+.menuPanel {
+  grid-area: header;
+  background-color: var(--clr-bg5);
+  color: var(--clr-font-light);
+}
+
+.leftPanel{
+  grid-area: leftSide;
+  background-color: var(--clr-bg2);
+}
+
+.rightPanel {
+  grid-area: rightSide;
+  background-color: var(--clr-bg3);
+}
+
+.footerPanel{
+  grid-area: footer;
+  background-color: var(--clr-bg5);
+  color: white;
+}
+
+.mainTextPanel {
+  color: white;
+}
+
+.mainPanel {
+  grid-area: main;
+  background-color: #A61B0F;
+ 
+}
